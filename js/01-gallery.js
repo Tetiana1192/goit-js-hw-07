@@ -5,9 +5,6 @@ import { galleryItems } from './gallery-items.js';
 
 // console.log(galleryItems);
 
-
-
-
 const paletteGallery = document.querySelector(".gallery");
 const socketGallery = createGallerycardsMarkup(galleryItems);
 

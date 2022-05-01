@@ -1,3 +1,5 @@
+
+
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
@@ -18,7 +20,7 @@ paletteGallery.insertAdjacentHTML('beforeend', socketGallery);
 
 function createGallerycardsMarkup(galleryItems) {
 
-	return galleryItems.map(({preview, original, description})=> {
+	return galleryItems.map(({preview, original, description}) => {
 	return `<li><a class="gallery__item" href="${original}">
   <img class="gallery__image" src="${preview}" alt="${description}" />
 </a></li>`;
@@ -27,3 +29,15 @@ function createGallerycardsMarkup(galleryItems) {
 
 	.join('');
 }
+
+
+const gallery = new SimpleLightbox('.gallery a', { 
+	captionSelector: "img",
+	captionsData: "atl",
+	captionPosition: "botton",
+	captionDelay: "250",
+	
+ });
+ 
+
+
