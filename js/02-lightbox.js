@@ -25,16 +25,14 @@ function createGallerycardsMarkup(galleryItems) {
   <img class="gallery__image" src="${preview}" alt="${description}" />
 </a></li>`;
     
-})
-
-	.join('');
+}) .join('');
 }
 
 
 const gallery = new SimpleLightbox('.gallery a', { 
 	captionSelector: "img",
 	captionsData: "atl",
-	captionPosition: "botton",
+	captionPosition:      "botton",
 	captionDelay: "250",
 	
  });
